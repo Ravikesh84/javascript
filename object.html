@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <script>
+        //multiple data store krta h object in key value pair.
+        // for in - objects key print krta h for in loop
+        //for of - values print krta h
+        let employee = {
+            name:"john",
+            age:30,
+            city:"new york",
+            empBankStatus:{
+                salary:1000,
+                bank_name:"rbi"
+            },
+
+            emp_function : function(){
+                console.log("object function")
+            },
+
+            emp_array:[1,"abc",8,9]
+        }
+        // for(let k in employee){  // for in loop
+        //     console.log(k)
+        // }
+
+        // for(let k in employee){  // for in loop
+        //     console.log(employee[k])
+        // }
+
+        let k = Object.keys(employee)  // keys() function used to print keys
+        console.log(k)
+
+        let v = Object.values(employee)  // values() function used to print values
+        console.log(v)
+        // console.log(employee.empBankStatus.bank_name)
+
+        console.log(employee.emp_function())
+        console.log(employee.emp_array[1])
+    </script>
+    
+</body>
+</html>

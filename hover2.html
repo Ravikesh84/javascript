@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main
+        {
+            display: none;
+        }
+        ul {
+           margin-left: 40%;
+           position: relative;
+           top: 200px;
+            list-style: none;
+            gap: 30px;
+        }
+        .main2{
+            margin-left: 60%;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li onmouseenter="fun()"> <img src="images/a1.jpg" height="100px" alt=""></li>
+        <li onmouseenter="fun1()"> <img src="iphone-6s-993199_1280.jpg" alt="" height="100px" > </li>
+        <li onmouseenter="fun2()">AC</li>
+        <li onmouseenter="fun3()">EARPHONE</li>
+        <li onmouseenter="fun4()">FAN</li>
+    </ul>
+    <!-- <div class="main">
+        <img src="coffee-2425303_1280.jpg" alt="" height="300px" id="a">
+        <img src="iphone-6s-993199_1280.jpg" alt="" height="300px" id="b">
+        <img src="condenser-unit-6605975_1280.jpg" alt="" height="300px" id="c">
+        <img src="earphone-2640990_1280.jpg" alt="" height="300px" id="d">
+        <img src="fan-414575_1280.jpg" alt="" height="300px" id="e">
+    </div> -->
+    <div class="main2">
+        <img src="coffee-2425303_1280.jpg" alt="" height="300px" id="im">
+    </div>
+    <script>
+        function fun(){
+            let im =document.getElementById('im')
+            im.src="coffee-2425303_1280.jpg"
+        }
+        function fun1(){
+            let im =document.getElementById('im')
+            im.src="iphone-6s-993199_1280.jpg"
+        }
+        function fun2(){
+            let im =document.getElementById('im')
+            im.src="condenser-unit-6605975_1280.jpg"
+        }
+        function fun3(){
+            let im =document.getElementById('im')
+            im.src="earphone-2640990_1280.jpg"
+        }
+        function fun4(){
+            let im =document.getElementById('im')
+            im.src="fan-414575_1280.jpg"
+        }
+
+    </script>
+</body>
+</html>

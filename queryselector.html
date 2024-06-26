@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Query Selector</h1>
+    <p class="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem iste eius
+      repellat animi! Maiores quo optio fugit, quaerat natus, qui quia, officia
+      ipsam est sed eveniet voluptas. Labore esse, illum sit incidunt corporis
+      neque. At neque quidem adipisci soluta. In assumenda reprehenderit earum
+      porro rem? Vitae fuga asperiores voluptatum libero!
+    </p>
+    <h3 id="head3">head 3</h3>
+
+    <ul>
+        <li>C++</li>
+        <li>Java</li>
+        <li>Python</li>
+        <li>.net</li>
+        <li>Django</li>
+    </ul>
+
+    <button>Click me</button>
+    <script>
+      let a=  document.querySelector('h1')
+        a.style.backgroundColor="red"
+
+        let b= document.querySelector('.para')
+        b.style.color="blue"
+
+        let c= document.querySelector('#head3')
+        c.style.color="yellow"
+
+       let d = document.querySelectorAll('li')
+       d[1].style.backgroundColor="pink"
+
+       let e =  document.querySelector('button')
+       e.addEventListener('click',function(){
+        alert('Button clicked')
+       })
+
+       let f =  document.querySelector('button')
+       f.addEventListener('mouseenter',function(){
+        alert('Button clicked')
+       })
+    </script>
+  </body>
+</html>

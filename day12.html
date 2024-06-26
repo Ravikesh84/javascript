@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <a id="anchor">Google</a>
+    <img id="im"> -->
+
+    <form action="" onsubmit="fun(); return false" >  
+        <label for="">Num 1</label>
+        <input type="text" id="n1" >
+
+        <label for="">Num 2</label>
+        <input type="text" id="n2">
+        <input type="submit">
+    </form>
+    <h1 id="an"></h1>
+    <script>
+        // let an = document.getElementById("anchor")
+        // an.setAttribute("href", "https://www.google.com")
+        // let im = document.getElementById('im')
+        // im.setAttribute('src','iphone-6s-993199_1280.jpg')
+        // im.setAttribute('height','200px')
+        function fun(){
+        let n1=parseInt(document.getElementById('n1').value);
+        let n2=parseInt(document.getElementById('n2').value);
+
+        let an=document.getElementById('an')
+        an.innerHTML=n1+n2
+        }
+    </script>
+</body>
+</html>

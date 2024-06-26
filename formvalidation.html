@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validate</title>
+</head>
+<body>
+
+    <h1>Form Validation</h1>
+    <form action="" onsubmit="return validate()">
+
+        <label for="">Name</label>
+        <input type="text" id="name"> <br>
+
+        <label for="">Contact</label>
+        <input type="text" id="contact"> <br>
+
+        <label for="">Email</label>
+        <input type="text" id="email"> <br>
+
+        <label for="">Password</label>
+        <input type="text" id="pass"> <br>
+
+        <label for="">Confirm Password</label>
+        <input type="text" id="cpass"> <br>
+
+        <input type="submit">
+    </form>
+
+    <script>
+
+        function validate(){
+            let nm = document.getElementById("name").value
+            let ct = document.getElementById("contact").value
+            let em = document.getElementById("email").value
+            let pass = document.getElementById("pass").value
+            let cpass = document.getElementById("cpass").value
+
+            if(nm==""){
+                alert("Please fill your name")
+                document.getElementById("name").focus()
+                return false
+            }
+            if(ct==""){
+                alert("Please fill your contact")
+                document.getElementById("contact").focus()
+                return false
+            }
+            if(isNaN(ct)){
+                alert("only digits are allowed")
+                document.getElementById("contact").focus()
+                return false
+            }
+            if(ct.length!=10 ){
+                alert("10 digits are allowed")
+                document.getElementById("contact").focus()
+                return false
+            }
+            if(em==""){
+                alert("Please fill your email")
+                document.getElementById("email").focus()
+                return false
+            }
+            if(!(em.includes("@"))){
+                alert("add @ in email")
+                document.getElementById("email").focus()
+                return false
+            }
+            if(pass==""){
+                alert("Please enter password")
+                document.getElementById("pass").focus()
+                return false
+            }
+            if(!(pass.match(/[~!@#$%^&*-+]/))){
+                alert("please add one special character")
+                document.getElementById("pass").focus()
+                return false
+            }
+            if(cpass==""){
+                alert("Please re enter your password")
+                document.getElementById("cpass").focus()
+                return false
+            }
+            if(pass!=cpass){
+                alert("mis match password")
+                document.getElementById("cpass").focus()
+                return false
+            }
+        }
+    </script>
+</body>
+</html>

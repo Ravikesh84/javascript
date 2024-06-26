@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            /* #a{
+                display: none;
+            }
+            #b{
+                display: none;
+            } 
+            #c{
+                display: none;
+            } 
+            #d{
+                display: none;
+            } 
+            #e{
+                display: none;
+            } */
+
+    </style>
+</head>
+<body>
+    <div>
+        
+        <h1 id="a" onmouseenter="fun()">Laptop</h1>
+        <img src="coffee-2425303_1280.jpg" alt="" onmouseenter="fun()" height="200px" id="a">
+    </div>
+    <div>
+        <h1>Mobile</h1>
+        <img src="iphone-6s-993199_1280.jpg" alt="" onmouseenter="fun2()" height="200px" id="b">
+    </div>
+    <div>
+        <h1>AC</h1>
+        <img src="condenser-unit-6605975_1280.jpg" alt="" onmouseenter="fun3()" height="200px" id="c">
+    </div>
+    <div>
+        <h1>Earphone</h1>
+        <img src="earphone-2640990_1280.jpg" alt="" onmouseenter="fun4()" height="200px" id="d">
+
+    </div>
+    <div>
+        <h1>Fan</h1>
+        <img src="fan-414575_1280.jpg" alt=""onmouseenter="fun5()" height="200px" id="e">
+    </div>
+
+    <div>
+        <img src="coffee-2425303_1280.jpg" alt="" id="im" height="500px">
+    </div>
+
+    <script>
+        function fun(){
+            let im = document.getElementById('im')
+            im.src="coffee-2425303_1280.jpg"
+            im.style.display = "block"
+        }
+        function fun2(){
+            let im = document.getElementById('im')
+            im.src="iphone-6s-993199_1280.jpg"
+            im.style.display = "block"
+        } function fun3(){
+            let c = document.getElementById('im')
+            im.src="condenser-unit-6605975_1280.jpg"
+        } function fun4(){
+            let d = document.getElementById('im')
+            im.src="earphone-2640990_1280.jpg"
+        } function fun5(){
+            let e = document.getElementById('im')
+            im.src="fan-414575_1280.jpg"
+        }
+    </script>
+</body>
+</html>

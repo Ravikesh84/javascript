@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sign up</h1>
+    <form action="" onsubmit="return validate()">
+        <label for="">Name</label>
+        <input type="text" id="name">
+
+        <label for="">Contact</label>
+        <input type="text" id="contact">
+
+        <label for="">Age</label>
+        <input type="text" id="age">
+
+        <label for="">Email</label>
+        <input type="text" id="email">
+
+        <label for="">Password</label>
+        <input type="text" id="pass">
+
+        <label for="">Confirm Password</label>
+        <input type="text" id="cpass">
+
+        <input type="submit">
+    </form>
+
+    <script>
+        function validate(){
+            let name= document.getElementById("name").value
+            let contact = document.getElementById("contact").value
+            let age = document.getElementById("age").value
+            let email = document.getElementById("email").value
+            let pass = document.getElementById("pass").value
+            let cpass = document.getElementById("cpass").value
+
+            if(name==""){
+                alert("please enter name")
+                document.getElementById(name).focus()
+                return false
+            }
+            if(contact==""){
+                alert("please enter contact")
+                document.getElementById("contact").focus()
+                return false
+            }
+            if(age==""){
+                alert("please enter age")
+                document.getElementById("age").focus()
+                return false
+            }
+            if(email==""){
+                alert("please enter email")
+                document.getElementById("email").focus()
+                return false
+            }
+        }
+    </script>
+
+</body>
+</html>

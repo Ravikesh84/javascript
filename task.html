@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #bike{
+            display :none 
+        }
+        #phone{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+       
+        <img src="ai-generated-8771567_1920.jpg" alt="" id="img1" width="400px">
+        <h1 id="bike">Bike Image</h1>
+        <img src="iphone-6s-993199_1280.jpg" alt="" id="img2" width="400px">
+        <h1 id="phone">Iphone Image</h1>
+
+    <script>
+        let a= document.querySelector('#img1')
+       
+        a.addEventListener('mouseenter', function(){
+           let c =  document.querySelector('#bike')
+             c.style.display="block"
+        })
+        a.addEventListener('mouseleave', function(){
+            let c =  document.querySelector('#bike')
+            c.style.display="none"
+        })
+
+        let b = document.querySelector('#img2')
+        b.addEventListener('mouseenter', function(){
+           let d =  document.querySelector('#phone')
+             d.style.display="block"
+        })
+        b.addEventListener('mouseleave', function(){
+            let d =  document.querySelector('#phone')
+            d.style.display="none"
+        })
+        
+    </script>
+</body>
+</html>

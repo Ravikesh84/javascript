@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main{
+        background-color: red;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div1">
+      <h1>Amazon</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium ut
+        impedit doloribus excepturi neque aperiam, tenetur quae iure dolorem
+        officiis culpa eius fugiat ducimus molestias in cumque vel possimus
+        recusandae! Sed possimus temporibus, illum, officia assumenda blanditiis
+        accusamus in, quas provident alias nihil earum nam impedit? Maiores
+        excepturi magnam iure.
+      </p>
+      <button onclick="fun()">Add here</button>
+      <button onclick="fun1()">Remove here</button>
+      <button onclick="fun2()">Toggle here</button>
+    </div>
+
+    <script>
+        function fun(){
+            let div1= document.getElementById('div1')
+            div1.classList.add('main')
+        }
+        function fun1(){
+            let div1= document.getElementById('div1')
+                div1.classList.remove("main")
+            }
+        function fun2(){
+            let div1= document.getElementById('div1')
+                div1.classList.toggle("main")
+            }
+        
+    </script>
+  </body>
+</html>

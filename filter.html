@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+         let students =[ {
+            name: "John",
+            age: 20,
+            grade: 85
+            },
+            {
+                name:"sk",
+                age: 22,
+                grade: 90
+                },
+            {
+                name:"Rahul",
+                age: 21,
+                grade: 78
+                },
+            {
+                    name:"Rohan",
+                    age: 20,
+                    grade: 92
+                }
+        ]
+
+  let a =   students.filter((key)=>{
+            return key.grade>80
+        })
+        console.log(a);
+    </script>
+</body>
+</html>

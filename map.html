@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        //map -- map() array ke elements ko access krta h and new array return krta h
+        let students =[ {
+            name: "John",
+            age: 20,
+            grade: 85
+            },
+            {
+                name:"sk",
+                age: 22,
+                grade: 90
+                },
+            {
+                name:"Rahul",
+                age: 21,
+                grade: 78
+                },
+            {
+                    name:"Rohan",
+                    age: 20,
+                    grade: 92
+                }
+        ]
+
+      let a=  students.map((key)=>{
+            return key.name
+        })
+        console.log(a);
+
+        let b = students.map((key)=>{
+            return key.age
+        })
+        console.log(b)
+
+        let c = students.map((key)=>{
+            return key.grade
+        })
+        console.log(c);
+
+        
+        </script>
+</body>
+</html>

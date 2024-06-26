@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" onsubmit="fun(); return false"   >
+        <label for="">Num1</label>
+        <input type="text" id="a">
+        <label for="">Num2</label>
+        <input type="text" id="b">
+        <input type="submit">
+
+    </form>
+    
+    <script>
+        function fun(){
+        let a= (document.getElementById('a').value)
+        let b= (document.getElementById('b').value)
+        // let c = a+b;
+        // alert(c)
+        if(a=="" || b=="") {
+            alert("please fill 1 field")
+        }
+        }
+    </script>
+</body>
+</html>

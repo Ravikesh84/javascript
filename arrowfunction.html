@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #frm{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="count">0</h1>
+    <button onclick="str()">Start</button>
+    <button onclick="stp()">Stop</button>
+
+    <form action="" id="frm">
+        <input type="text">
+        <input type="text">
+        <input type="submit">
+    </form>
+    <script>
+        // let c= (a,b) =>{ return a+b}
+        // console.log(c(2,8))
+
+        // let a = (a)=>(a*a)
+        // console.log(a(5))
+
+        // let i =(z)=> z
+        // console.log(i(3))
+
+        // let p = k => k
+        // console.log(p(4))
+
+        // setInterval(()=>{return document.write("hello")},3000)
+        
+        let i
+        function str(){
+            let a=1
+            let ct = document.getElementById('count')
+           i= setInterval(()=>{
+                ct.innerHTML=a++
+            },2000)
+        }
+
+        function stp(){
+            clearInterval(i)
+        }
+        
+        setTimeout(()=>{
+            document.getElementById('frm').style.display="block"
+        },4000)
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box{
+            display: flex;
+        }
+        .box2{
+            display: flex;
+        
+        }
+        .box2 button{
+            height: 30px;
+            margin: 10px;
+        }
+        h4{
+            position: relative;
+            bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <img src="iphone-6s-993199_1280.jpg" alt="" height="300px">
+    <h1>iPhone 6s</h1>
+    <div class="box">
+    <p>Price : </p>
+    <p style="text-decoration: line-through;">Rs 1000</p>
+    </div>
+    <p>Offer Price :</p>
+    <div class="box2">
+    <button>-</button> <h4>0</h4>
+    <button onclick="fun()">+</button> <br> <br>
+    <button>Buy Now</button>
+    </div>
+
+    <script>
+        let img = document.querySelector('img');
+       
+        let b = 0
+        function fun(){
+            let a = document.querySelector('h4')
+            a.innerHTML =b++
+        }
+
+        
+    </script>
+</body>
+</html>
